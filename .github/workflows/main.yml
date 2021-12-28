@@ -31,6 +31,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: "beanstalkbuildnode"
         environment_name: "Beanstalkbuildnode-env"
-        version_label: 12345
+        version_label: ver-${{ github.sha }}
         region: ap-south-1
         deployment_package: deploy.zip
